@@ -19,8 +19,8 @@
 module processing_element_array #(
   parameter  int  N_SIZE        = 5,
   parameter  int  DATA_WIDTH    = 8,
-  localparam type data_word_t   = logic [            DATA_WIDTH-1:0],
-  localparam type result_word_t = logic [(2*$bits(data_word_t))-1:0]
+  localparam type data_word_t   = logic [        DATA_WIDTH-1:0],
+  localparam type result_word_t = logic [2 * DATA_WIDTH - 1 : 0]
 ) (
     input  logic         clk,
     input  logic         rst_n,
